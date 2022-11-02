@@ -1,0 +1,161 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="ecomcss.css">
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="ecomjs.js"></script>
+</head>
+
+<body>
+    <div class="header" style="height: 100px; font-weight: bolder; font-size: 100px;">
+        E-commerce
+    </div>
+    <div class="itempage">
+        <table class="table" style="width: 50%; height: 400px;">
+            <thead style="font-size: 20px; font-weight: bold; height: 80px;">
+                <td style="width: 43%;">
+                    Product
+                </td>
+                <td style="width: 25%;">
+                    Price
+                </td>
+                <td>
+                    Quantity
+                </td>
+            </thead>
+            <tbody style="font-size: 20px;">
+                <tr>
+                    <td id="prd1">
+                        Couch
+                    </td>
+                    <td id="prc1">
+                        60$
+                    </td>
+                    <td>
+                        <button id="bt1n" onclick="updateqty('bt1n')">
+                            -
+                        </button>
+                        <span id="qt1">
+                            0
+                        </span>
+                        <button id="bt1p" onclick="updateqty('bt1p')">
+                            +
+                        </button>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="prd2">
+                        Table
+                    </td>
+                    <td id="prc2">
+                        40$
+                    </td>
+                    <td>
+                        <button id="bt2n" onclick="updateqty('bt2n')">
+                            -
+                        </button>
+                        <span id="qt2">
+                            0
+                        </span>
+                        <button id="bt2p" onclick="updateqty('bt2p')">
+                            +
+                        </button>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="prd3">
+                        Chair
+                    </td>
+                    <td id="prc3">
+                        25$
+                    </td>
+                    <td>
+                        <button id="bt3n" onclick="updateqty('bt3n')">
+                            -
+                        </button>
+                        <span id="qt3">
+                            0
+                        </span>
+                        <button id="bt3p" onclick="updateqty('bt3p')">
+                            +
+                        </button>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="prd4">
+                        Mirror
+                    </td>
+                    <td id="prc4">
+                        10$
+                    </td>
+                    <td>
+                        <button id="bt4n" onclick="updateqty('bt4n')">
+                            -
+                        </button>
+                        <span id="qt4">
+                            0
+                        </span>
+                        <button id="bt4p" onclick="updateqty('bt4p')">
+                            +
+                        </button>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="prd5">
+                        Bed
+                    </td>
+                    <td id="prc5">
+                        80$
+                    </td>
+                    <td>
+                        <button id="bt5n" onclick="updateqty('bt5n')">
+                            -
+                        </button>
+                        <span id="qt5">
+                            0
+                        </span>
+                        <button id="bt5p" onclick="updateqty('bt5p')">
+                            +
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <button class="cartbtn" onclick="gotocart()">
+            Go to Cart.
+        </button>
+    </div>
+    <div class="cartpage">
+        <table class="table" style="width: 50%; height: 400px;">
+            <thead style="font-size: 20px; font-weight: bold; height: 80px;">
+                <td style="width: 43%;">
+                    Product
+                </td>
+                <td>
+                    Quantity
+                </td>
+                <td style="width: 25%;">
+                    NetPrice
+                </td>
+            </thead>
+            <tbody style="font-size: 20px;" id="cartcontainer">
+                <!--cart items-->
+            </tbody>
+        </table>
+        <button class="itembtn" onclick="gotoitems()">
+            Go back to Item Page.
+        </button>
+        <div id="userdetail">
+            <span style="font-size: 25px;">Email address:</span>
+            <input type="text" style="height: 30px; margin-left: 5px; margin-right: 20px; font-size: 20px;">
+            <span style="font-size: 25px;">Phone Number:</span>
+            <input type="text" style="height: 30px; margin-left: 5px; font-size: 20px;">
+        </div>
+        <button class="itembtn" onclick="purchase()">
+                Place Order
+        </button>
+    </div>
+    
+</body>
+
+</html>

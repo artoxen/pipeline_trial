@@ -1,0 +1,52 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+td {
+    padding: 5px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+button {
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+.cartbtn,.itembtn{
+    width: 40%;
+    margin-top: 20px;
+    height: 40px;
+}
+
+.itempage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 5%;
+}
+table, th, td{
+    border: 1px solid black;
+}
+.cartpage{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 5%;
+}
+#userdetail
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
